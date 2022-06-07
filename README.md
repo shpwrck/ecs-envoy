@@ -5,7 +5,7 @@
 1. ECS -> host insecure apps
 2. EKS -> host istio infrastructure
 3. S3 -> host envoy configuration
-4. Certificate Authorities -> secure communictaion
+4. Certificate Authorities -> secure communication
 
 ### Steps
 
