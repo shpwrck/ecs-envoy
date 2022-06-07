@@ -1,0 +1,17 @@
+apiVersion: networking.istio.io/v1beta1
+kind: ServiceEntry
+metadata:
+  name: httpbin-ext
+  namespace: default
+spec:
+  hosts:
+  - app.skrzypek.dev
+  ports:
+  - name: HTTP
+    number: 80
+    protocol: HTTP
+    targetPort: 443
+  - name: HTTPS
+    number: 443
+    protocol: HTTPS
+  resolution: DNS

@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: httpbin-ext
+  namespace: default
+spec:
+  gateways:
+  - ecs-app
+  hosts:
+  - gate.skrzypek.dev
+  http:
+  - route:
+    - destination:
+        host: app.skrzypek.dev
+        port:
+          number: 80

@@ -1,0 +1,8 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: istio-issuer
+  namespace: sandbox
+spec:
+  ca:
+    secretName: istio-key-pair
